@@ -16,15 +16,18 @@ body {
 
 /* Global CSS */
 
+:root {
+    --gradient-color-1: #68042a;
+    --gradient-color-2: #b3044d;
+
+}
+
 body {
-    background-image: linear-gradient(90deg, #68042a, #b3044d);
+    background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
     color: white;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding: 20px;
 }
 
@@ -55,7 +58,7 @@ button {
 
 button:hover {
     transform: scale(1.02);
-    background-color: #97235b;
+    background-color: #ff007b;
 }
 
 button:active {
@@ -64,33 +67,33 @@ button:active {
 }
 
 #content {
-    max-width: 800px;
     line-height: 1.6;
     padding: 20px;
+    overflow: auto;
 }
 
 h2 {
-    color: #d35400; /* Burnt orange */
+    color: #d35400;
     border-bottom: 2px solid #eee;
     margin-top: 40px;
+    font-size: 40px;
 }
 
 h3 {
-    display: flex;
-    justify-content: space-between;
     font-weight: normal;
 }
 
 h4 {
-    display: flex;
-    justify-content: space-between;
     font-weight: normal;
+    font-size: 30px;
 }
+
+/* Home CSS */
 
 .home-description {
     font-size: 28px;
     padding-bottom: 1rem;
-    color: rgb(255, 165, 202);
+    color: #ffa5ca;
 }
 
 .home-sub-description {
@@ -98,7 +101,79 @@ h4 {
     padding-bottom: 1rem;
 }
 
-.show-hours {
-    margin: 0 0 20px 0;
+.home-image {
+    float: right;
+    height: 90vh;
+    border: 5px solid #d35400;
+    border-radius: 10px;
 }
 
+.show-hours {
+    margin-bottom: 20px;
+}
+
+/* Menu CSS */
+
+.parent-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    flex: 1;
+}
+
+.right-container {
+    flex: 0 0 30vw;
+}
+
+.category-title {
+    width: 20vw;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-image {
+    width: 30vw;
+    object-fit: contain;
+    border: 5px solid #d35400;
+    border-radius: 10px;
+}
+
+/* About CSS */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contact-card {
+    padding: 20px;
+    background-color: rgba(213, 139, 0, 0.3);
+    border-left: 5px solid #d35400;
+    border-radius: 20px;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.contact-name {
+    color: #ffca28;
+    font-weight: bold;
+    display: block;
+}
+
+.map-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    height: 300px;
+    width: 30vw;
+    border: 3px dashed #d35400;
+    border-radius: 10px;
+    margin: 30px;
+}

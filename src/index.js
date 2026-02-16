@@ -10,13 +10,13 @@ const menuPage = document.querySelector(".menu-btn");
 const aboutPage = document.querySelector(".about-btn");
 
 homePage.addEventListener("click", () => {
-    loadHomePage();
+  loadHomePage();
 });
 
 menuPage.addEventListener("click", () => {
-    loadMenuPage();
+  loadMenuPage();
 });
 
 aboutPage.addEventListener("click", () => {
-    loadAboutPage();
-})
+  loadAboutPage();
+});
