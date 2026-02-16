@@ -17,7 +17,7 @@ body {
 /* Global CSS */
 
 body {
-    background-color: #888;
+    background-image: linear-gradient(90deg, #68042a, #b3044d);
     color: white;
 }
 
@@ -27,18 +27,13 @@ body {
     flex-direction: column;
     padding: 20px;
 }
-/* these need tweaking, until #content */
+
 header {
     display: flex;
-    justify-content: end;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     background: #333;
     gap: 50px;
-}
-
-.title {
-    display: flex;
-    justify-content: start;
 }
 
 nav {
@@ -54,18 +49,18 @@ button {
     border: none;
     border-radius: 10px;
     color: white;
-    background-color: cornflowerblue;
+    background-color: #bd0065;
     transition: transform 0.3s;
 }
 
 button:hover {
     transform: scale(1.02);
-    background-color: #4a76c9;
+    background-color: #97235b;
 }
 
 button:active {
     transform: scale(0.98);
-    background-color: #3761ae;
+    background-color: #821b4b;
 }
 
 #content {
@@ -90,5 +85,20 @@ h4 {
     display: flex;
     justify-content: space-between;
     font-weight: normal;
+}
+
+.home-description {
+    font-size: 28px;
+    padding-bottom: 1rem;
+    color: rgb(255, 165, 202);
+}
+
+.home-sub-description {
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+
+.show-hours {
+    margin: 0 0 20px 0;
 }
 
